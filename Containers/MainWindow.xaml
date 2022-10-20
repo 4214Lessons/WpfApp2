@@ -1,0 +1,88 @@
+﻿<Window x:Class="Containers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Containers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <!--
+        <StackPanel Name="sp" Orientation="Vertical">
+            <Button FontSize="42">1</Button>
+            <Button FontSize="42">2</Button>
+            <Button FontSize="42">3</Button>
+        </StackPanel>
+        -->
+
+
+        <!--
+        <WrapPanel Orientation="Horizontal">
+            <Button Width = "100" Height="100" FontSize="42">1</Button>
+            <Button Width = "100" Height="100" FontSize="42">2</Button>
+            <Button Width = "100" Height="100" FontSize="42">3</Button>
+            <Button Width = "100" Height="100" FontSize="42">4</Button>
+            <Button Width = "100" Height="100" FontSize="42">5</Button>
+        </WrapPanel>
+        -->
+
+
+
+        <!--
+        <DockPanel>
+            <Button Background="BlanchedAlmond" DockPanel.Dock="Top" FontSize="42">Header</Button>
+            
+            <Button Background="Magenta"        DockPanel.Dock="Bottom" FontSize="42">Footer</Button>
+            
+            <StackPanel  Background="Cyan" DockPanel.Dock="Left">
+                <Button Width="150" Height="50"></Button>
+                <Button Width="150" Height="50"></Button>
+                <Button Width="150" Height="50"></Button>
+                <Button Width="150" Height="50"></Button>
+                <Button Width="150" Height="50"></Button>
+                <Button Width="150" Height="50"></Button>
+            </StackPanel>
+            
+            <Button Background="Green"          DockPanel.Dock="Right" FontSize="42">Right sidebar</Button>
+            <Button Background="Azure"    FontSize="42">Body</Button>
+        </DockPanel>
+        -->
+
+
+
+
+        <!--
+        <Canvas>
+            <Button Canvas.Top="0" Canvas.Left="0" Width="100" FontSize="42">1</Button>
+            <Button Canvas.Top="0" Canvas.Right="0" Width="100" FontSize="42">2</Button>
+            <Button Canvas.Bottom="0" Canvas.Left="0" Width="100" FontSize="42">3</Button>
+            
+            <Button Panel.ZIndex="2" Canvas.Bottom="0" Canvas.Right="0" Width="100" FontSize="42">4</Button>
+            <Button Panel.ZIndex="1" Canvas.Bottom="0" Canvas.Right="0" Width="100" FontSize="42">5</Button>
+        </Canvas>
+        -->
+
+
+        
+        <Grid Background="Beige">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Button Grid.Column="1" Width="100"></Button>
+
+        </Grid>
+
+
+    </Grid>
+</Window>
